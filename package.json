@@ -13,7 +13,7 @@
     "url": "https://mmounir.dev"
   },
   "scripts": {
-    "start": "node ts-node/register ./src/index.ts",
+    "start": "tsc && node build",
     "build": "tsc",
     "watch": "nodemon"
   },
