@@ -13,8 +13,8 @@
     "url": "https://mmounir.dev"
   },
   "scripts": {
+    "start": "node ts-node/register ./src/index.ts",
     "build": "tsc",
-    "dev": "node ts-node/register ./src/index.ts",
     "watch": "nodemon"
   },
   "dependencies": {
