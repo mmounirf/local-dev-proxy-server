@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "node proxy.js"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.2.1",
+    "fastify": "^4.15.0"
+  }
+}
