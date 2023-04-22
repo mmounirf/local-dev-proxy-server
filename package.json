@@ -1,9 +1,25 @@
 {
+  "name": "local-dev-proxy-server",
+  "version": "1.0.0",
+  "description": "A simple proxy server for local development",
+  "main": "proxy.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmounirf/local-dev-proxy-server"
+  },
+  "author": {
+    "name": "Mou",
+    "email": "m.mounir.f@gmail.com",
+    "url": "https://mmounir.dev"
+  },
   "scripts": {
     "start": "node proxy.js"
   },
   "dependencies": {
     "@fastify/cors": "^8.2.1",
     "fastify": "^4.15.0"
+  },
+  "devDependencies": {
+    "@railway/cli": "^3.0.22"
   }
 }
