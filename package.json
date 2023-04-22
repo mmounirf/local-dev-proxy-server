@@ -2,7 +2,7 @@
   "name": "local-dev-proxy-server",
   "version": "1.0.0",
   "description": "A simple proxy server for local development",
-  "main": "proxy.js",
+  "main": "build/src/index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/mmounirf/local-dev-proxy-server"
@@ -13,13 +13,20 @@
     "url": "https://mmounir.dev"
   },
   "scripts": {
-    "start": "node proxy.js"
+    "build": "tsc",
+    "dev": "node ts-node/register ./src/index.ts",
+    "watch": "nodemon"
   },
   "dependencies": {
     "@fastify/cors": "^8.2.1",
-    "fastify": "^4.15.0"
+    "@fastify/http-proxy": "^9.0.0",
+    "fastify": "^4.15.0",
+    "nodemon": "^2.0.22"
   },
   "devDependencies": {
-    "@railway/cli": "^3.0.22"
+    "@railway/cli": "^3.0.22",
+    "@types/node": "^18.15.13",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
   }
 }
